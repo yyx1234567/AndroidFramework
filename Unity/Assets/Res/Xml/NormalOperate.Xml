@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Config ID="NormalOperate" Name="普通动画操作">
-  <Operate ID="N01"  Target="Null" Animation="Null" />
-  <Operate ID="N02"  Target="Null" Animation="Null" />
-  <Operate ID="N03"  Target="Null" Animation="Null" />
-  <Operate ID="N04"  Target="Null" Animation="Null" />
- </Config>
