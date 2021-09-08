@@ -46,11 +46,35 @@ namespace ETHotfix
         /// <returns></returns>
         public static OperateBase GetXmlOperateData(XmlData data, XmlNode item)
         {
+            foreach (XmlNode node in data.NodeList)
+            {
+                if (node.Attributes["Script"].Value == "Operate")
+                {
+                     foreach (XmlNode operatedata in node)
+                    {
+                        if (operatedata.Attributes["ID"] == null)
+                            continue;
+                        if (item.Attributes["Operate"] == null)
+                            continue;
+
+                        if (operatedata.Attributes["ID"].Value == item.Attributes["Operate"].Value)
+                        {
+                            var instance = System.Activator.CreateInstance(Type.GetType($"ETHotfix.{operatedata.Attributes["Script"].Value}")) as OperateBase;
+                            instance.CarPerformanceDic = new List<PerformanceBase>();
+                            foreach (XmlNode Performance in operatedata)
+                            {
+                                var performanceBase = XmlConfigHelper.GetXmlData<PerformanceBase>(Performance, Performance.Attributes["Script"].Value);
+                                performanceBase.Init();
+                                instance.CarPerformanceDic.Add(performanceBase);
+                            }
+                            return (OperateBase)instance;
+                        }
+                    }
+                }
+            }
 
 
-            var instance = System.Activator.CreateInstance(Type.GetType($"ETHotfix.{item.Attributes["Operate"].Value}"));
-
-            return (OperateBase)instance;
+            return null;
         }
         public OperateItemScriptObject TryGetMission(System.Predicate<OperateItemScriptObject> predicate)
         {

@@ -9,7 +9,7 @@ namespace ETHotfix
     public class PerformanceShowObject : PerformanceBase
     {
          public string TargetID;
-         public bool HideOnAwake;
+         public string HideOnAwake;
          private GameObject _target;
           public override void Init()
         {
@@ -20,7 +20,7 @@ namespace ETHotfix
         {
             _target = SceneUnitHelper.Get(TargetID);
             yield return null;
-            if (HideOnAwake)
+            if (bool.Parse( HideOnAwake))
             {
                 _target?.SetActive(false);
             }

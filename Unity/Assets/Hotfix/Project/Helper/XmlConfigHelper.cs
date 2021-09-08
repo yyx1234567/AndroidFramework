@@ -57,8 +57,29 @@ namespace ETHotfix
             }
             return (T)instance;
         }
-
-      
+        public static T GetXmlData<T>(XmlNode item, string script)
+        {
+            var type = Type.GetType($"ETHotfix.{script}");
+            var instance = System.Activator.CreateInstance(type);
+            for (int i = 0; i < item.Attributes.Count; i++)
+            {
+                foreach (var field in type.GetFields())
+                {
+                    if (field.Name == item.Attributes[i].Name)
+                    {
+                        field.SetValue(instance, item.Attributes[i].Value);
+                    }
+                }
+                foreach (var properties in type.GetProperties())
+                {
+                    if (properties.Name == item.Attributes[i].Name)
+                    {
+                        properties.SetValue(instance, item.Attributes[i].Value);
+                    }
+                }
+            }
+            return (T)instance;
+        }
         /// <summary>
         /// 加载数据
         /// </summary>

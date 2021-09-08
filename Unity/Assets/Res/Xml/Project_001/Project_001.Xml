@@ -25,7 +25,7 @@
 
   <!--流程操作数据-->
   <!--
-     1.正常操作  播放完Performance就完成步骤 没有特殊性功能
+       1.正常操作  播放完Performance就完成步骤 没有特殊性功能
     <Item ID="Operate_001" Script="NormalOperate" ViewID="">
    -->
   <!--流程操作数据-->
@@ -37,24 +37,31 @@
       3.显示物体操作
       <Performance Script="PerformanceShowObject" TargetID="对象001"  SetScale="001" HideOnAwake="false" />
   -->
-  <Module Script="Operate"  Name="实验方法">
+  <Module Script="Operate"  Name="流程操作">
     <Item ID="Operate_001" Script="NormalOperate" ViewID="">
       <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
-      <Performance Script="PerformanceHideObject" TargetID="对象001"  SetScale="001" HideOnAwake="false" />
-      <Performance Script="PerformanceShowObject" TargetID="对象001"  SetScale="001" HideOnAwake="false" />
+      <Performance Script="PerformanceHideObject" TargetID="对象001"   HideOnAwake="false" />
+      <Performance Script="PerformanceShowObject" TargetID="对象002"  HideOnAwake="false" />
      </Item>
     <Item ID="Operate_002" Script="NormalOperate" ViewID="">
       <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+      <Performance Script="PerformanceHideObject" TargetID="对象002"   HideOnAwake="false" />
+      <Performance Script="PerformanceShowObject" TargetID="对象003"  HideOnAwake="false" />
     </Item>
     <Item ID="Operate_003" Script="NormalOperate" ViewID="">
       <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+      <Performance Script="PerformanceHideObject" TargetID="对象003"   HideOnAwake="false" />
+      <Performance Script="PerformanceShowObject" TargetID="对象004"  HideOnAwake="false" />
     </Item>
     <Item ID="Operate_004" Script="NormalOperate" ViewID="">
       <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+      <Performance Script="PerformanceHideObject" TargetID="对象004"   HideOnAwake="false" />
+      <Performance Script="PerformanceShowObject" TargetID="对象005"  HideOnAwake="false" />
     </Item>
     <Item ID="Operate_005" Script="NormalOperate" ViewID="">
       <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
-    </Item>
+      <Performance Script="PerformanceHideObject" TargetID="对象005"   HideOnAwake="false" />
+     </Item>
   </Module>
 
   

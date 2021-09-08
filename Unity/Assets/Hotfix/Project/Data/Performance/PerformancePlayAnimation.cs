@@ -11,11 +11,11 @@ namespace ETHotfix
 {
     public class PerformancePlayAnimation : PerformanceBase
     {
-        public bool NoWaitAnimation;
-        public float DelayStart;
+        public string NoWaitAnimation;
+        public string DelayStart;
         public string AnimatorID;
         public string AnimationClipID;
-        public float DelayEnd;
+        public string DelayEnd;
 
 
         private int _layer;
@@ -154,15 +154,15 @@ namespace ETHotfix
             {
                 Ani.enabled = true;
                 Ani.Play(AnimationClipID, _Layer, 0);
-                if (NoWaitAnimation)
+                if (bool.Parse(NoWaitAnimation))
                 {
                     yield break;
                 }
                 yield return new WaitForSeconds(0.1f);
-                yield return new WaitForSeconds(DelayStart);
+                yield return new WaitForSeconds(float.Parse(DelayStart));
                 float time = Ani.GetCurrentAnimatorStateInfo(_Layer).length;
                 yield return new WaitForSeconds(time);
-                yield return new WaitForSeconds(DelayEnd);
+                yield return new WaitForSeconds(float.Parse(DelayEnd));
             }
         }
     }
