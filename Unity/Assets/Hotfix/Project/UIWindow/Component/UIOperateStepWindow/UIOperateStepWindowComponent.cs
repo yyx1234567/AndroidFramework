@@ -15,10 +15,11 @@ namespace ETHotfix
         {
             LastStep.GetComponent<Button>().onClick.AddListener(()=>
             {
-                StartMissionEvent.CurrentStepIndex--;
-                if (StartMissionEvent.CurrentStepIndex < 1)
-                    StartMissionEvent.CurrentStepIndex = 1;
-                var index = StartMissionEvent.CurrentStepIndex;
+                 var index = StartMissionEvent.CurrentStepIndex-1;
+                if (index < 0)
+                {
+                    index = 0;
+                }
                 Game.EventSystem.Run(EventIdType.StartMissionEvent, index);
               });
             Reset.GetComponent<Button>().onClick.AddListener(() =>
