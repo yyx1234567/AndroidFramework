@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59330ab99d97854478ac0c03ae608a90, type: 3}
+  m_Name: EditorProjectManager
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 4900000, guid: 11f33c843e2486544a27f63294ced0c9, type: 3}
+    - {fileID: 4900000, guid: cbf7ae9072c02514f8f28eb137153fe6, type: 3}
+    - {fileID: 4900000, guid: 00b561c7f385d6642a660c8f57c91625, type: 3}
+    - {fileID: 4900000, guid: 8815c5ef12d14ad468179ed34ae66b08, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: projects
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[ETModel.ProjectItem, Unity.Model]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 1|ETModel.ProjectItem, Unity.Model
+    - Name: ProjectID
+      Entry: 1
+      Data: Project_001
+    - Name: ProjectName
+      Entry: 1
+      Data: "\u5730\u4E0B\u8FDE\u7EED\u65BD\u5DE5"
+    - Name: ProjectData
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|ETModel.ProjectItem, Unity.Model
+    - Name: ProjectID
+      Entry: 1
+      Data: Project_002
+    - Name: ProjectName
+      Entry: 1
+      Data: "\u6848\u4F8B002"
+    - Name: ProjectData
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|ETModel.ProjectItem, Unity.Model
+    - Name: ProjectID
+      Entry: 1
+      Data: Project_003
+    - Name: ProjectName
+      Entry: 1
+      Data: "\u6848\u4F8B003"
+    - Name: ProjectData
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|ETModel.ProjectItem, Unity.Model
+    - Name: ProjectID
+      Entry: 1
+      Data: Project_004
+    - Name: ProjectName
+      Entry: 1
+      Data: "\u6848\u4F8B004"
+    - Name: ProjectData
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  CurrentProject: {fileID: 4900000, guid: 11f33c843e2486544a27f63294ced0c9, type: 3}

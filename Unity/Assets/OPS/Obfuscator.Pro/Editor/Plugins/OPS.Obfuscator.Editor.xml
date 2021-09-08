@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OPS.Obfuscator.Editor</name>
+    </assembly>
+    <members>
+        <member name="T:OPS.Obfuscator.AssemblyComponents.MethodInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.AssemblyComponents.MethodInfo.#ctor(OPS.Obfuscator.AssemblyComponents.TypeInfo,System.String,System.String[])">
+            <summary>
+            Used for deserialization!
+            </summary>
+            <param name="typeInfo"></param>
+            <param name="_Name"></param>
+        </member>
+        <member name="T:OPS.Obfuscator.AssemblyComponents.PropertyInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.AssemblyComponents.PropertyInfo.#ctor(OPS.Obfuscator.AssemblyComponents.TypeInfo,System.String,System.String)">
+            <summary>
+            Used for deserialization!
+            </summary>
+            <param name="typeInfo"></param>
+            <param name="_Type"></param>
+            <param name="_Name"></param>
+        </member>
+        <member name="T:OPS.Obfuscator.AssemblyComponents.EventInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.AssemblyComponents.EventInfo.#ctor(OPS.Obfuscator.AssemblyComponents.TypeInfo,System.String,System.String)">
+            <summary>
+            Used for deserialization!
+            </summary>
+            <param name="typeInfo"></param>
+            <param name="_Type"></param>
+            <param name="_Name"></param>
+        </member>
+        <member name="T:OPS.Obfuscator.AssemblyComponents.FieldInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.AssemblyComponents.FieldInfo.#ctor(OPS.Obfuscator.AssemblyComponents.TypeInfo,System.String,System.String)">
+            <summary>
+            Used for deserialization!
+            </summary>
+            <param name="typeInfo"></param>
+            <param name="_Type"></param>
+            <param name="_Name"></param>
+        </member>
+        <member name="T:OPS.Obfuscator.AssemblyComponents.TypeInfo">
+            <summary>
+            Core class of a Member component in a Type.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.AssemblyComponents.TypeInfo.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Used for deserialization!
+            </summary>
+            <param name="_Scope"></param>
+            <param name="_NameSpace"></param>
+            <param name="_Name"></param>
+            <param name="_HashName"></param>
+            <param name="FullName"></param>
+        </member>
+        <member name="P:OPS.Obfuscator.AssemblyComponents.TypeInfo.OriginalNamespace">
+            <summary>
+            Event nested classes get an namespace because of this!!!!
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Editor.Asset.AssetHelper.Refresh">
+            <summary>
+            Refresh the AssetDatabase.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Editor.Asset.AssetHelper.GetUnityPath">
+            <summary>
+            Returns the Unity Path C:\XYZ\MyUnityProject\
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Editor.Asset.AssetHelper.Move(System.String,System.String)">
+            <summary>
+            Move one file to another location.
+            </summary>
+            <param name="_From"></param>
+            <param name="_To"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Cache.ParameterTypeNameCache.BuildTypeName(System.Text.StringBuilder,OPS.Mono.Cecil.TypeReference)">
+            <summary>
+            Recursively builds a type name.
+            </summary>
+            <param name="builder">Builder the type name will be added to.</param>
+            <param name="type">Type whose name is to be built.</param>
+        </member>
+        <member name="M:OPS.Obfuscator.Cache.ParameterTypeNameCache.GetTypeName(OPS.Mono.Cecil.TypeReference)">
+            <summary>
+            Builds a name for a type that can be used for comparing types.  Any generic parameters
+            are replaced with their placeholder names instead of actual names (e.g., changes T to !0).
+            </summary>
+        </member>
+        <member name="F:OPS.Obfuscator.Class.Pro.ClassObject.relativePath">
+            <summary>
+            Path without File name.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Extensions.TypeReferenceExtension.GetScopeName(OPS.Mono.Cecil.TypeReference)">
+            <summary>
+            Returns the simplified name for the assembly where a type can be found,
+            for example, a type whose module is "Assembly.exe", "Assembly" would be 
+            returned.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Obfuscator.LoadEditorPlatform">
+            <summary>
+            Load the local editor platform.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Obfuscator.LoadBuildPlatform(UnityEditor.BuildTarget)">
+            <summary>
+            Load the build platfom based on the unity given buildtarget.
+            </summary>
+            <param name="_BuildTarget"></param>
+        </member>
+        <member name="M:OPS.Obfuscator.Obfuscator.GetDependencies">
+            <summary>
+            Load all assembly directory paths,
+            based on the one in the domain,
+            the one in editor location
+            and the one used for the build platform.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.AnalyseStringStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.NotObfuscatedCauseStep.DoStep">
+            <summary>
+            Inserts the MessTypeUpReferenceMethod in the types.
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.Pro.AnalyseClassStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.Pro.AnalyseUnityTypeStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.Pro.Clone.Clone.AllowedToClone(OPS.Mono.Cecil.MethodDefinition)">
+            <summary>
+            Check if it is allowed to clone method!
+            </summary>
+            <param name="_MethodDefinition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.Pro.Clone.Clone.CloneMethod(OPS.Mono.Cecil.TypeDefinition,OPS.Mono.Cecil.MethodDefinition,System.String,System.Boolean)">
+            <summary>
+            Clone an Method inside an Type.
+            </summary>
+            <param name="copyToTypedef"></param>
+            <param name="sourceMethod"></param>
+            <param name="_NewName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.Pro.Clone.CloneObfuscator.ObfuscateFullType(OPS.Mono.Cecil.TypeDefinition)">
+            <summary>
+            Very simple method. Use only for String Obfuscation Type copy!
+            </summary>
+            <param name="_TypeDefinition"></param>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.Pro.SuppressIldasmAttributeStep.#ctor(OPS.Obfuscator.Other.Pro.ProjectPro)">
+            <summary>
+            Searchs for the MessTypeUpReferenceMethod in all assemblies.
+            </summary>
+            <param name="_Project"></param>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.Pro.SuppressIldasmAttributeStep.DoStep">
+            <summary>
+            Inserts the MessTypeUpReferenceMethod in the types.
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.Pro.PreRenameUnityTypeAndNamespaceStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.AnalyseGuiStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.AnalyseGuiStep.GetByteArrayFromFile(System.String)">
+            <summary>
+            Get Bytes for File Loading.
+            </summary>
+            <param name="_File"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.AnalyseGuiStep.GetStringForBytes(System.Byte[])">
+            <summary>
+            Gets String from Bytes for File Loading.
+            </summary>
+            <param name="_ByteArray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.AnalyseGuiStep.StringToByteArray(System.String)">
+            <summary>
+            Saves String to Bytes for File Saving.
+            </summary>
+            <param name="_String"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.AnalyseGuiStep.FromConvertedToString(System.String)">
+            <summary>
+            Returns the original String for a converted String.
+            </summary>
+            <param name="_String"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.AnalyseModelStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.AnalyseMethodStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.AnalyseTypeStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.AnalyseMemberStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.FindNamespaceNameStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.FindTypeNameStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.FindMethodNameStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.FindMemberNameStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.LoadMethodSemanticStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.AnalyseNamespaceStep">
+            <summary>
+            Step 3:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.LoadAssembliesStep">
+            <summary>
+            Step 1:
+            Load AssemblyInfo Members.
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.RenameUnityTypeAndNamespaceStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.RenameUnityTypeAndNamespaceStep.GenerateNamespace_A(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            Returns a namespace with a length of at least 1.
+            </summary>
+            <param name="_NamespaceList"></param>
+            <param name="_FirstNamespaceList"></param>
+            <param name="_ExistingNamespaceList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Process.RenameUnityTypeAndNamespaceStep.GenerateNamespace_B(System.Collections.Generic.List{System.String})">
+            <summary>
+            Returns a random namespace with length 0 to 5.
+            </summary>
+            <param name="_NamespaceList"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.RenameMethodStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.RenamePropertyAndEventStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.RenameFieldStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="T:OPS.Obfuscator.Process.RenameParameterStep">
+            <summary>
+            Step 4:
+            Check if the all should get renamed
+            </summary>
+        </member>
+        <member name="P:OPS.Obfuscator.Other.AssemblyFileInfo.IsUnityDll">
+            <summary>
+            Returns if this dll is a unity (Assembly-CSharp or AssemblyDefFile) dll, that needs no backup!
+            </summary>
+        </member>
+        <member name="P:OPS.Obfuscator.Other.AssemblyFileInfo.Obfuscate">
+            <summary>
+            Returns if this assembly shall get obfuscated.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Other.Project.Contains(OPS.Mono.Cecil.TypeReference)">
+            <summary>
+            Returns whether the project contains a given type.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Other.Project.Contains(OPS.Obfuscator.AssemblyComponents.TypeInfo)">
+            <summary>
+            Returns whether the project contains a given type.
+            </summary>
+        </member>
+        <member name="M:OPS.Obfuscator.Other.Project.GetTypeDefinition(OPS.Mono.Cecil.TypeReference)">
+            <summary>
+            Returns the TypeDefinition if it is contained in the assemblies
+            </summary>
+            <param name="_Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Renaming.ObfuscatorAddon.AllowTypeRenaming(OPS.Obfuscator.AssemblyComponents.TypeInfo,System.String@)">
+            <summary>
+            Check the Obfuscator Attributes and skip renaming them!
+            </summary>
+            <param name="_TypeInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Renaming.RenamingManager.AddAddon(OPS.Obfuscator.Renaming.ARenamingAddon)">
+            <summary>
+            Add an allow Renaming addon.
+            </summary>
+            <param name="_RenamingAddon"></param>
+        </member>
+        <member name="M:OPS.Obfuscator.Renaming.RenamingManager.IsRenamingAllowed(OPS.Obfuscator.AssemblyComponents.FieldInfo,System.String@)">
+            <summary>
+            Check if a field is allowed based on the addon to be renamed!
+            </summary>
+            <param name="_FieldInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Renaming.RenamingManager.AddFilter(OPS.Obfuscator.Renaming.ARenamingFilter)">
+            <summary>
+            Add an how to rename filter.
+            </summary>
+            <param name="_RenamingFilter"></param>
+        </member>
+        <member name="M:OPS.Obfuscator.Setting.Settings.Parse(System.String,System.Boolean)">
+            <summary>
+            Used for Loading.
+            </summary>
+            <param name="_Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Obfuscator.Setting.Settings.Parse(System.Boolean)">
+            <summary>
+            Used for Saving.
+            </summary>
+            <param name="_Value"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

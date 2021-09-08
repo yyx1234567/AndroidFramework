@@ -1,0 +1,12 @@
+{
+  "ConfigDic":
+   {
+     "AssetbundleUrl":"https://jgxnjj.oss-cn-qingdao.aliyuncs.com",
+     "GetPlatformInfo":"http://47.97.253.141:30096/api/app/appTenantAuthUser/check/VMS",
+     "AppCode":"https://jgxnjj.oss-cn-qingdao.aliyuncs.com",
+     "GetCurrentVersion":"http://47.97.253.141:30096/api/app/appversion/get-current-version?appCode=VMS",
+     "PlatformUrl":"http://47.97.253.141:44315/api/vms/virtualAids/version/get-current-version",
+     "AidUrl":"http://47.97.253.141:44315/api/vms/virtualAids/version/get-current-version?virtualAidCode=",
+     "Version":"1.0.2"
+   }
+}

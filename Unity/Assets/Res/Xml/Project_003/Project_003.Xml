@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+  <Data ID="Project_000" Name="准备工作" />
+  <Data ID="Project_001" Name="元件分解" />
+  <Data ID="Project_002" Name="元件清洁" />
+  <Data ID="Project_003" Name="外观检查" />
+  <Data ID="Project_004" Name="测量调整" />
+  <Data ID="Project_005" Name="元件装配" />
+ </Config>

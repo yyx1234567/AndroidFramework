@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 1599079437
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: platform_code
+      Dependencies: {}
+    Info_1:
+      Name: platform_config
+      Dependencies: {}
+    Info_2:
+      Name: platform_prefab
+      Dependencies: {}
+    Info_3:
+      Name: platform_mainscene
+      Dependencies: {}
+    Info_4:
+      Name: platform_uiwindow
+      Dependencies: {}

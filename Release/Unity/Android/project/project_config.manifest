@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 4027317105
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1179af4826bae944c484942fc57614bc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7f77594fe74ea88a11fe15af11fd53de
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d426f94e2c0347499d59e527102a286, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5ae6688a0c0b9624ca11634bd3f0258c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b023470dcfd7bd843879355287208066, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 502d8cafd6a5a0447ab1db9a24cdcb10, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/Independent/DataConfig.prefab
+- Assets/Bundles/Independent/Shader.prefab
+- Assets/Bundles/Independent/Config.prefab
+- Assets/Bundles/Independent/OperateConfig.prefab
+Dependencies: []

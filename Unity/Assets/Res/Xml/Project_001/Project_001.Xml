@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Config ID="Project_001" Name="地下连续施工" Prefab="地下连续施工">
+  <!--实验目的模块-->
+  <Module Script="ExperimentPurposeData"  Name="实验目的">
+    <Item Title="标题"  Content="内容"/>
+    <Item Title="标题"  Content="内容"/>
+    <Item Title="标题"  Content="内容"/>
+  </Module>
+
+  <!--仪器设备模块-->
+  <Module Script="InstrumentUnitData"  Name="仪器设备">
+    <Item Name="设备01"  Target="对象001" ViewID="View_001"  Audio="" Content="使用铲运机和铁锹把施工现场地面修正平"/>
+    <Item Name="设备02"  Target="对象002" ViewID="View_002"  Audio="" Content="使用铲运机和铁锹把施工现场地面修正平"/>
+    <Item Name="设备03"  Target="对象003" ViewID="View_003"  Audio="" Content="使用铲运机和铁锹把施工现场地面修正平"/>
+  </Module>
+
+  <!--实验方法模块-->
+  <Module Script="ExperimentalMethodData"  Name="实验方法">
+    <Item ID="001" TargetID="对象001" ViewID="View_001" Operate="Operate_001" Description="使用铲运机和铁锹把施工现场地面修正平"/>
+    <Item ID="002" TargetID="对象002" ViewID="View_002" Operate="Operate_002" Description="使用经纬仪指挥测量工定出导墙点，然后使用钢尺和白灰放出导墙线。"/>
+    <Item ID="003" TargetID="对象003" ViewID="View_003" Operate="Operate_003" Description="使用经纬仪指挥测量工定出导墙点，然后使用钢尺和白灰放出导墙线。"/>
+    <Item ID="004" TargetID="对象004" ViewID="View_004" Operate="Operate_004" Description="使用挖掘机挖出导墙沟，然后使用铁锹清理沟内杂物将沟修理平整"/>
+    <Item ID="005" TargetID="对象005" ViewID="View_005" Operate="Operate_005" Description="使用挖掘机挖出导墙沟，然后使用铁锹清理沟内杂物将沟修理平整"/>
+  </Module>
+
+  <!--流程操作数据-->
+  <!--
+     1.正常操作  播放完Performance就完成步骤 没有特殊性功能
+    <Item ID="Operate_001" Script="NormalOperate" ViewID="">
+   -->
+  <!--流程操作数据-->
+  <!--
+       1.动画操作    
+      <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+      2.隐藏物体操作
+      <Performance Script="PerformanceHideObject" TargetID="对象001"  SetScale="001" HideOnAwake="false" />
+      3.显示物体操作
+      <Performance Script="PerformanceShowObject" TargetID="对象001"  SetScale="001" HideOnAwake="false" />
+  -->
+  <Module Script="Operate"  Name="实验方法">
+    <Item ID="Operate_001" Script="NormalOperate" ViewID="">
+      <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+      <Performance Script="PerformanceHideObject" TargetID="对象001"  SetScale="001" HideOnAwake="false" />
+      <Performance Script="PerformanceShowObject" TargetID="对象001"  SetScale="001" HideOnAwake="false" />
+     </Item>
+    <Item ID="Operate_002" Script="NormalOperate" ViewID="">
+      <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+    </Item>
+    <Item ID="Operate_003" Script="NormalOperate" ViewID="">
+      <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+    </Item>
+    <Item ID="Operate_004" Script="NormalOperate" ViewID="">
+      <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+    </Item>
+    <Item ID="Operate_005" Script="NormalOperate" ViewID="">
+      <Performance Script="PerformancePlayAnimation" AnimatorID="对象001"  AnimationClipID="001" NoWaitAnimation="false"  DelayStart="0" DelayEnd="0"/>
+    </Item>
+  </Module>
+
+  
+  
+  
+  <!--视角数据-->
+  <Module Script="ViewConfig"  Name="视角数据">
+    <Item ViewID="View_001" Target="对象001" Y="45" X="135" Distance="5"  />
+    <Item ViewID="View_002" Target="对象002" Y="45" X="135" Distance="5"  />
+    <Item ViewID="View_003" Target="对象003" Y="45" X="135" Distance="5"  />
+    <Item ViewID="View_004" Target="对象004" Y="45" X="135" Distance="5"  />
+    <Item ViewID="View_005" Target="对象005" Y="45" X="135" Distance="5"  />
+  </Module>
+
+  <!--场景物体数据-->
+  <Module Script="SceneUnitConfig"  Name="场景物体数据">
+    <Item TargetName="001" TargetID="对象001"  />
+    <Item TargetName="002" TargetID="对象002"  />
+    <Item TargetName="003" TargetID="对象003"  />
+    <Item TargetName="004" TargetID="对象004"  />
+    <Item TargetName="005" TargetID="对象005"  />
+  </Module>
+</Config>

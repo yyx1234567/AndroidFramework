@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b023470dcfd7bd843879355287208066, type: 3}
+  m_Name: ViewConfig
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Type
+      Entry: 7
+      Data: 0|ViewConfig, Unity.Model
+    - Name: Target
+      Entry: 6
+      Data: 
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Distance
+      Entry: 4
+      Data: 0
+    - Name: MaxX
+      Entry: 4
+      Data: 0
+    - Name: MinX
+      Entry: 4
+      Data: 0
+    - Name: MaxY
+      Entry: 4
+      Data: 0
+    - Name: MinY
+      Entry: 4
+      Data: 0
+    - Name: MaxDistance
+      Entry: 4
+      Data: 0
+    - Name: MinDistance
+      Entry: 4
+      Data: 0
+    - Name: RotateSpeed
+      Entry: 4
+      Data: 0
+    - Name: ZoomSpeed
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: ItemList
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[ETModel.ScriptObjectBaseConfig,
+        Unity.Model]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 2|ViewConfig, Unity.Model
+    - Name: Target
+      Entry: 1
+      Data: Cube
+    - Name: X
+      Entry: 4
+      Data: 135
+    - Name: Y
+      Entry: 4
+      Data: 45
+    - Name: Distance
+      Entry: 4
+      Data: 5
+    - Name: MaxX
+      Entry: 4
+      Data: 360
+    - Name: MinX
+      Entry: 4
+      Data: -360
+    - Name: MaxY
+      Entry: 4
+      Data: 89
+    - Name: MinY
+      Entry: 4
+      Data: 0
+    - Name: MaxDistance
+      Entry: 4
+      Data: 10
+    - Name: MinDistance
+      Entry: 4
+      Data: 0
+    - Name: RotateSpeed
+      Entry: 4
+      Data: 1
+    - Name: ZoomSpeed
+      Entry: 4
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|ViewConfig, Unity.Model
+    - Name: Target
+      Entry: 6
+      Data: 
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Distance
+      Entry: 4
+      Data: 0
+    - Name: MaxX
+      Entry: 4
+      Data: 0
+    - Name: MinX
+      Entry: 4
+      Data: 0
+    - Name: MaxY
+      Entry: 4
+      Data: 0
+    - Name: MinY
+      Entry: 4
+      Data: 0
+    - Name: MaxDistance
+      Entry: 4
+      Data: 0
+    - Name: MinDistance
+      Entry: 4
+      Data: 0
+    - Name: RotateSpeed
+      Entry: 4
+      Data: 0
+    - Name: ZoomSpeed
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Name: ViewDataConfig
+  Description: "\u89C6\u89D2\u914D\u7F6E"

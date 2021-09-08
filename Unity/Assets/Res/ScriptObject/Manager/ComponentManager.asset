@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8a66cba7b7604428c3abc55f0ce6e2, type: 3}
+  m_Name: ComponentManager
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  components:
+  - {fileID: 11400000, guid: 31f9c65c4f59cc74087d2b0a377f41ce, type: 2}
+  - {fileID: 11400000, guid: f6353b978dd13c340adc29f75a4aed63, type: 2}
+  - {fileID: 11400000, guid: 4ce70ed4b503d1446b83cbbdcc6f145b, type: 2}
+  - {fileID: 11400000, guid: 40e5a079fb39d324a86c000fdd46eff8, type: 2}
+  - {fileID: 11400000, guid: 4b2e720b47695954a8e4a98d728503cf, type: 2}
+  - {fileID: 11400000, guid: c336881e720041b46a3b036bb31c35b8, type: 2}
+  - {fileID: 11400000, guid: 755f1c0b6694a3847a31f02f795e0b5a, type: 2}
+  - {fileID: 11400000, guid: 62e06375f0a11a14abb98cfee1ad5e9c, type: 2}
+  - {fileID: 11400000, guid: cd41690ef54a7ac43ad36f367dad84bc, type: 2}
+  - {fileID: 11400000, guid: 773d97b6788a2ea49b7b0d700d0c4bde, type: 2}
+  - {fileID: 11400000, guid: a5cb4a128c2b0fc43bee26c25b440327, type: 2}
+  - {fileID: 11400000, guid: 5e96dcd617a397d49b9d7d647755912e, type: 2}
+  - {fileID: 11400000, guid: 66962492244524e49a2e2c4353b9717f, type: 2}
+  - {fileID: 11400000, guid: 6ccb8905abc20754990732fbeeb246cb, type: 2}
+  - {fileID: 11400000, guid: 20b992d5f2959bc4eae3770107bb646c, type: 2}
+  - {fileID: 11400000, guid: dd66eb618a4e8cc429f37e9e7d462a4e, type: 2}
+  - {fileID: 11400000, guid: 492154807ff44c64cbeca0863bf1d6cf, type: 2}
+  - {fileID: 11400000, guid: f178e8dc2b451b94980c018e4a3fdac2, type: 2}
+  - {fileID: 11400000, guid: 22f51ea26e3c53f49b756f89848033de, type: 2}
+  - {fileID: 11400000, guid: a0a13d50fcc60be4580e9ccbdd615ab6, type: 2}
+  - {fileID: 11400000, guid: 58249ece69b41b74bb6c4487104c2f7b, type: 2}
+  - {fileID: 11400000, guid: ca11aae9f46bcc7409673ee0d989e027, type: 2}
+  - {fileID: 11400000, guid: 988399d919f79104ab4e72026db9cf24, type: 2}
+  - {fileID: 11400000, guid: 9794de22de015bf488d7c89c22449a7d, type: 2}
+  - {fileID: 11400000, guid: c79534e2df0eab84986c7734edb89b69, type: 2}
+  - {fileID: 11400000, guid: 6074d96aaba591d4dbeb9d968bba2fee, type: 2}
+  - {fileID: 11400000, guid: ac68d8bcb77043e449a0fa443b840845, type: 2}
+  - {fileID: 11400000, guid: 6d202499e516201418ddd4e655602ca2, type: 2}
+  - {fileID: 11400000, guid: bd0ac65a324aa5840ab44cba7b315262, type: 2}
+  ProjectComponents:
+  - {fileID: 11400000, guid: ff9f7a931b701514fbe30a07fa3d339c, type: 2}
+  - {fileID: 11400000, guid: 7a8761e486f164c4d966c66ab58cdb1c, type: 2}
+  - {fileID: 11400000, guid: 415eebba1543d414ab2a6ba5fedda63c, type: 2}
+  - {fileID: 11400000, guid: 235d0c033730f0f4581e230459f0730e, type: 2}
+  - {fileID: 11400000, guid: 95e4cd473080fef4face0e1845280d41, type: 2}
+  - {fileID: 11400000, guid: 6164f0acc7e876b4292a516a8b924fa8, type: 2}
+  - {fileID: 11400000, guid: e5fdc41c634eb8b40aabfb229eca0a5d, type: 2}
+  - {fileID: 11400000, guid: d7fdfe26b2e9858408b88bbaa9453989, type: 2}
+  - {fileID: 11400000, guid: 6149f5ef47d2f9646b4e177454066235, type: 2}
+  - {fileID: 11400000, guid: c57243a24861f1246bbad39edf951b7c, type: 2}
+  - {fileID: 11400000, guid: 78cc33795b0f9f7429f1f2bb107479fa, type: 2}
+  - {fileID: 11400000, guid: d316883eb09136241b5321d59529674e, type: 2}
+  - {fileID: 11400000, guid: 8ea6fc80fdf70f14bb5bef4bd715bf3f, type: 2}
+  ComponentPath: Assets/Model
+  ComponentInfoPath: Assets/Res/ScriptObject/Component/ComponentInfo
+  ComponentInfoPath2: Assets/Res/ScriptObject/Component/ProjectComponentInfo
+  ProjectComponentInfoPath: Assets/Hotfix/Project

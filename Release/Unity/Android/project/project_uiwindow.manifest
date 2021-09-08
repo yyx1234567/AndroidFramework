@@ -1,0 +1,120 @@
+ManifestFileVersion: 0
+CRC: 1251534055
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ce96d4cc6f7644ce0f7eb6efe1c6035e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 54cc1971e8474c6164707a9fcabd7a08
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7afb73c1b7174964598d741e50422204, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3fb48d82dc0e94a2b9246d17d04f8748, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 01f77d3570102a3488c7cdbee5a7b234, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6066a458caefc5c40aef0ca281197850, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0afb5cd9e4c47f84d9dcbc7e2f56694f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: aa85dbead832ed14490c169c10ddd328, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a308d96b18bd61a4c8511048ae8e917d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a463043e699b5684c9d640592e4989f0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 502d8cafd6a5a0447ab1db9a24cdcb10, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7d93eccf812c4fa45b218ab8003d278e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e9d2e32f308e0b645845520bde076bd2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 34e785826bc754d4f9d0ddd6881378d3, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/Project/UI/UIWindow/UIPartMenuWindow/System/UIPartMenuItem.prefab
+- Assets/Bundles/Project/UI/UIWindow/UILoadingWindow/UILoadingWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIStoreWindow/UIStoreWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UICountDownWindow/UICountDownWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIOperateStepWindow/UIOperateStepWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIMessageWindow/UIMessageWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIRecordWindow/UIRecordWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIPartDetailWindow/UIPartDetailWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UINoteWindow/UINoteWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIMainWindow/UIMainWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIMaskWindow/UIMaskWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIReportWindow/UIReportWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UIPartMenuWindow/UIOperateMenuWindow.prefab
+- Assets/Bundles/Project/UI/UIWindow/UITimeCountWindow/UITimeCountWindow.prefab
+Dependencies: []

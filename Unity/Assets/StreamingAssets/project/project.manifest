@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3610943443
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: project_uiwindow
+      Dependencies: {}
+    Info_1:
+      Name: project_prefab
+      Dependencies: {}
+    Info_2:
+      Name: project_mainscene
+      Dependencies: {}
+    Info_3:
+      Name: project_config
+      Dependencies: {}
+    Info_4:
+      Name: project_code
+      Dependencies: {}
