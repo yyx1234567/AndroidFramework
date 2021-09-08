@@ -8,23 +8,23 @@ namespace ETHotfix
     [Sirenix.OdinInspector.HideReferenceObjectPicker]
     public class PerformanceShowObject : PerformanceBase
     {
-         public string TargetID;
-         public string HideOnAwake;
-         private GameObject _target;
-          public override void Init()
+        public string TargetID;
+        public string HideOnAwake;
+        private GameObject _target;
+        public override void Init()
         {
             CoroutineComponent.Instance.StartCoroutineVoid(IEInit());
-         }
+        }
 
         private IEnumerator IEInit()
         {
             _target = SceneUnitHelper.Get(TargetID);
             yield return null;
-            if (bool.Parse( HideOnAwake))
+            if (bool.Parse(HideOnAwake))
             {
                 _target?.SetActive(false);
             }
-         }
+        }
         public override void Jump()
         {
             _target = GetTarget();
@@ -46,7 +46,7 @@ namespace ETHotfix
 
         private GameObject GetTarget()
         {
-            return _target==null? SceneUnitHelper.Get(TargetID): _target;
+            return _target == null ? SceneUnitHelper.Get(TargetID) : _target;
         }
 
         public override void Stop()

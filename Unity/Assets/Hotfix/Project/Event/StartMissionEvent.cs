@@ -42,14 +42,14 @@ namespace ETHotfix
         }
     }
     [Event(EventIdType.StartMissionEvent)]
-    public class StartMissionEvent : AEvent<string>
+    public class StartMissionEvent : AEvent<int>
     {
         public static int CurrentStepIndex;
-        public override async void Run(string name)
+        public override async void Run(int name)
         {
             await Task.Delay(100);
             var projectconfigcomponent =  Game.Scene.GetComponent<ProjectConfigComponent>();
-            if (string.IsNullOrEmpty(name))
+            if (name == 0)
             {
                 CurrentStepIndex = 1;
                 var info = projectconfigcomponent.TryGetMission(x => x.StepIndex == 1);
@@ -57,20 +57,17 @@ namespace ETHotfix
                 Game.EventSystem.Run(EventIdType.MoveCameraEvent, Camera.main, info.ViewID);
                 Game.EventSystem.Run(EventIdType.HighlightTargetEvent, new  HighlightTargetEventArg() { TargetName = info.TargetID, lightType = HighLightType.Mission });
                 var allmission = projectconfigcomponent.TryGetAllMission();
-                for (int i = allmission.Count-1; i >0 ; i--)
+                for (int i = allmission.Count-1; i >=0 ; i--)
                 {
                     allmission[i].OperateInfo.ResetStep();
                 }
             }
             else
             {
-                var index = 0;
-                var missionlist = projectconfigcomponent.TryGetAllMission();
-                index = missionlist.Where(x => x.StepName == name).FirstOrDefault().StepIndex;
-                CoroutineComponent.Instance.StartCoroutineVoid(StartMissionWithIndex(index));
+                 var missionlist = projectconfigcomponent.TryGetAllMission();
+                 CoroutineComponent.Instance.StartCoroutineVoid(StartMissionWithIndex(name));
             }
-
-          }
+         }
 
  
         private IEnumerator StartMissionWithIndex(int index)
@@ -99,12 +96,7 @@ namespace ETHotfix
                 {
                     allmission[i].OperateInfo.JumpStep();
                 }
-
-                //for (int i = CurrentStepIndex; i > index; i--)
-                //{
-                //    allmission[i - 2].StepData.OperateInfo.ResetStep();
-                //}
-            }
+             }
             info = projectconfigcomponent.TryGetMission(x => x.StepIndex == index);
             info.OperateInfo.StartOperate();
             CurrentStepIndex = index;

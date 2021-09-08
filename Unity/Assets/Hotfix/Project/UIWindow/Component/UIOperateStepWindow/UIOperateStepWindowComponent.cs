@@ -19,12 +19,12 @@ namespace ETHotfix
                 if (StartMissionEvent.CurrentStepIndex < 1)
                     StartMissionEvent.CurrentStepIndex = 1;
                 var index = StartMissionEvent.CurrentStepIndex;
-                Game.EventSystem.Run(EventIdType.StartMissionWithIndexEvent, index);
+                Game.EventSystem.Run(EventIdType.StartMissionEvent, index);
               });
             Reset.GetComponent<Button>().onClick.AddListener(() =>
             {
                 Game.EventSystem.Run(EventIdType.CloseHightlightEvent);
-                Game.EventSystem.Run(EventIdType.StartMissionEvent, string.Empty);
+                Game.EventSystem.Run(EventIdType.StartMissionEvent, 0);
             });
         }
 
@@ -32,7 +32,7 @@ namespace ETHotfix
         {
             IsStepOperateWindowOpen = true;
             Game.EventSystem.Run(EventIdType.CloseHightlightEvent);
-            Game.EventSystem.Run(EventIdType.StartMissionEvent, string.Empty);
+            Game.EventSystem.Run(EventIdType.StartMissionEvent, 0);
             base.Show();
         }
         protected override void Hide()

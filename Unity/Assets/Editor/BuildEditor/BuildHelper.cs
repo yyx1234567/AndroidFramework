@@ -129,42 +129,42 @@ namespace Utils.Editor
 
         private static void CreateScript(string NameSpace, string path)
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Clear();
-            sb.AppendLine("using System.Collections.Generic;");
-            sb.AppendLine($"namespace {NameSpace}");
-            sb.AppendLine("{");
-            sb.AppendLine($"\tpublic partial class AssetsBundleAddress");
-            sb.AppendLine("\t{");
-            var data = AssetBundleBrowser.AssetBundleModel.Model.DataSource;
-            foreach (var item in data.GetAllAssetBundleNames())
-            {
-                foreach (var asset in data.GetAssetPathsFromAssetBundle(item))
-                {
-                    var assetName = asset.Split('/').LastOrDefault().Split('.').FirstOrDefault();
-                    var bundleName = item.Split('_').LastOrDefault().Split('.').FirstOrDefault();
-                     sb.AppendLine($"\t\tpublic const string {bundleName}_{assetName} =\"{bundleName}_{assetName}\";");
-                     sb.AppendLine("\t");
-                }
-            }
-            sb.AppendLine("\t\tpublic static void Init()");
-            sb.AppendLine("\t\t{");
-            foreach (var item in data.GetAllAssetBundleNames())
-            {
-                foreach (var asset in data.GetAssetPathsFromAssetBundle(item))
-                {
-                    var assetName = asset.Split('/').LastOrDefault().Split('.').FirstOrDefault();
-                    var bundleName = item.Split('_').LastOrDefault().Split('.').FirstOrDefault();
-                    sb.AppendLine($"\t\t\tassetbundleDic.Add({$"\"{bundleName}_{assetName}\""}, new AssetBundleInfo(){{BundleName = \"{item}\", AssetName=\"{assetName}\"}});");
-                }
-            }
-            sb.AppendLine("\t\t}");
-            sb.AppendLine("\t}");
-            sb.AppendLine("}");
+            //StringBuilder sb = new StringBuilder();
+            //sb.Clear();
+            //sb.AppendLine("using System.Collections.Generic;");
+            //sb.AppendLine($"namespace {NameSpace}");
+            //sb.AppendLine("{");
+            //sb.AppendLine($"\tpublic partial class AssetsBundleAddress");
+            //sb.AppendLine("\t{");
+            //var data = AssetBundleBrowser.AssetBundleModel.Model.DataSource;
+            //foreach (var item in data.GetAllAssetBundleNames())
+            //{
+            //    foreach (var asset in data.GetAssetPathsFromAssetBundle(item))
+            //    {
+            //        var assetName = asset.Split('/').LastOrDefault().Split('.').FirstOrDefault();
+            //        var bundleName = item.Split('_').LastOrDefault().Split('.').FirstOrDefault();
+            //         sb.AppendLine($"\t\tpublic const string {bundleName}_{assetName} =\"{bundleName}_{assetName}\";");
+            //         sb.AppendLine("\t");
+            //    }
+            //}
+            //sb.AppendLine("\t\tpublic static void Init()");
+            //sb.AppendLine("\t\t{");
+            //foreach (var item in data.GetAllAssetBundleNames())
+            //{
+            //    foreach (var asset in data.GetAssetPathsFromAssetBundle(item))
+            //    {
+            //        var assetName = asset.Split('/').LastOrDefault().Split('.').FirstOrDefault();
+            //        var bundleName = item.Split('_').LastOrDefault().Split('.').FirstOrDefault();
+            //        sb.AppendLine($"\t\t\tassetbundleDic.Add({$"\"{bundleName}_{assetName}\""}, new AssetBundleInfo(){{BundleName = \"{item}\", AssetName=\"{assetName}\"}});");
+            //    }
+            //}
+            //sb.AppendLine("\t\t}");
+            //sb.AppendLine("\t}");
+            //sb.AppendLine("}");
 
-            sb.AppendLine();
+            //sb.AppendLine();
 
-            System.IO.File.WriteAllText(path, sb.ToString());
+            //System.IO.File.WriteAllText(path, sb.ToString());
          }
 
         private static void GenerateVersionInfo(string dir, string version, string UpdateDescription, string UpdateDetails)

@@ -11,7 +11,7 @@ namespace ETHotfix
     {
         public string TargetID;
 
-          public string HideOnAwake;
+         public string HideOnAwake;
 
         private GameObject _target;
 
